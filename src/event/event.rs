@@ -83,3 +83,4 @@ impl <T: Sized, E: std::error::Error, D: DataDecoder<T, E>> DataReader<T, E, D> 
         self.data.as_ref().map(D::decode_data)
     }
 }
+
